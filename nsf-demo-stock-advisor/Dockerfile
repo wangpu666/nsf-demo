@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=harbor.cloud.netease.com/qztest/cicd-mvn3.5-jdk8:v2.1.1
+ARG BASE_IMAGE=harbor.qz.sf.163.com/xuxiao/cicd-mvn3.5-jdk8:v2.1.1
 
 FROM ${BASE_IMAGE}
 
