@@ -9,6 +9,6 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 #add application
 ADD ./nsf-demo-stock-advisor/target/*.jar /opt/nsf/
 
-ENV JAVA_OPTS='-javaagent:/root/.nsf/agent/nsf-boot.jar  -Dnsf.type=http  -Dnsf.nsfServer=http://nsf-server.qz.sf.163.com  -Dnsf.application.name=nsf-demo-advisor  -Dnsf.application.version=0.0.1  -Dnsf.application.projectCode=wp-test  -Dnsf.application.projectEnv=prod  '
+ENV JAVA_OPTS=''
 
 CMD java $JAVA_OPTS -jar /opt/nsf/nsf-demo-stock-advisor-1.0-SNAPSHOT.jar
