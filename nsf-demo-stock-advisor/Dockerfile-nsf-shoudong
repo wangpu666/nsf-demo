@@ -17,6 +17,6 @@ ADD ./nsf-demo-stock-advisor/nsf.yml /opt/nsf/nsf.yml
 ADD ./nsf-demo-stock-advisor/target/*.jar /opt/nsf/
 
 
-ENV JAVA_OPTS='-javaagent:/opt/nsf/nsf-agent-fat.jar=nsf -Dstock_provider_url=http://stock-provider-shoudong -Dstock_viewer_url=http://stock-viewer-shoudong'
+ENV JAVA_OPTS='-javaagent:/opt/nsf/nsf-agent-fat.jar=nsf -Dstock_provider_url=http://stock-provider -Dstock_viewer_url=http://stock-viewer'
 
 CMD java $JAVA_OPTS -jar /opt/nsf/nsf-demo-stock-advisor-1.0-SNAPSHOT.jar
