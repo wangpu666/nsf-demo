@@ -9,7 +9,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 #add nsf agent jar and config file
 RUN mkdir -p /opt/nsf && cd /opt/nsf && \
-    curl -O http://console.jfyl.upgrade.test.com/download/nsf/nsf-agent-fat.jar
+    curl -O http://console.qz.sf.163.com/download/nsf/nsf-agent-fat.jar
 
 
 ADD ./nsf-demo-stock-advisor/nsf.yml /opt/nsf/nsf.yml
